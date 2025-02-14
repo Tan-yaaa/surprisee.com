@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my one nd only bhulada❤️</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            text-align: center;
+            background: url('WhatsApp Image 2025-02-14 at 12.35.25 AM.jpeg') no-repeat center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .heart-container {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 3em;
+        }
+        .heart {
+            color: red;
+        }
+        .click-text {
+            font-size: 18px;
+            color: white;
+            margin-top: 5px;
+        }
+        .message {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+            width: 60%;
+            background: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day!</h1>
+    <div class="heart-container" onclick="toggleMessage()" ondblclick="toggleMessage()">
+        <span class="heart">❤️</span>
+        <p class="click-text">click me</p>
+    </div>
+    <p id="message" class="message">"Kehte hain agar kisi cheez ko dil se chaho to puri kainaat usse tumse milane ki koshish mein lag jaati hai." Ye bas SRK ki movies mai hi suna tha par jab ye humare saath hua toh I got to know that universe truly listens! I love you more than our fights,arguments,silly talks and mood swings...</p>
+    <script>
+        function toggleMessage() {
+            let message = document.getElementById('message');
+            message.style.display = message.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
